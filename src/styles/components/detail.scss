@@ -1,0 +1,118 @@
+@import "../__variables.scss";
+
+.detail-component-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    overflow: hidden;
+    
+    & > * { pointer-events: all; }
+    
+    &.horizontal > .content-container {
+        $height: 80px;
+        @media #{$mobile}, #{$tablet} {
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: $height;
+        }
+        @media #{$mobile} { top: calc(100% - #{$height} - 70px); }
+        @media #{$tablet} { top: calc(100% - #{$border-thickness} - #{$height} - 50px); }
+    }
+    
+    &.vertical > .content-container {
+        @media #{$tablet} {
+            width: 50%;
+            left: 50%;
+            top: -1px;
+            bottom: -1px;
+        }
+    }
+    
+    .content-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 60%;
+        width: 300px;
+        background: $white;
+        margin: $border-thickness 0;
+        padding: 20px;
+        box-sizing: border-box;
+        transition-property: left top;
+        transition-duration: 1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h3 {
+            width: 100%;
+            text-align: center;
+        }
+        
+        & > * {
+            flex: 1;
+            width: 100%;
+        }
+        
+        &.hidden { left: 100%; }
+        
+        @media #{$mobile} {
+            left: 0;
+            right: 0;
+            height: 75%;
+            top: 25%;
+            width: 100%;
+            margin: 0;
+            padding: 40px 20px;
+            
+            &.hidden {
+                left: 0;
+                top: 100%;
+            }
+        }
+        
+        .close-button-container {
+            flex: 0;
+            @media #{$tablet} { margin-bottom: 20px; }
+            
+            i {
+                margin: 8px 0 64px 0;
+                font-size: 42px;
+                -webkit-text-stroke: 8px white;
+            }
+        }
+    }
+    
+    .detail-toggle-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: $border-thickness;
+        background: $white;
+        
+        box-sizing: border-box;
+        
+        @media #{$mobile} {
+            height: $border-thickness;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: calc(100% - #{$border-thickness});
+            padding: 0 24px;
+            
+            i.push-right {
+                position: absolute;
+                width: $border-thickness;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
+}

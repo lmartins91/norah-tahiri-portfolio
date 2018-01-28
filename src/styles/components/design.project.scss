@@ -1,0 +1,67 @@
+@import "../__variables.scss";
+
+.design-project-component-container {
+    .banner-container {
+        box-sizing: border-box;
+        padding: $border-thickness;
+        height: 100vh;
+        
+        @media #{$tablet} {
+            height: 50%;
+            padding: 0;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .project-details {
+        display: flex;
+        padding: 0 calc(2 * #{$border-thickness});
+        
+        
+        @media #{$tablet} {
+            flex-wrap: wrap;
+            white-space: nowrap;
+            padding: $border-thickness;
+            & > p { margin: 0 !important; }
+        }
+    
+        & > * {
+            flex: 1;
+            &:first-of-type { flex: 2; }
+        }
+        
+        h3 { margin-bottom: 0px; }
+        p { margin: 65px 0; }
+    }
+    
+    .carousel-component-container {
+        height: 580px;
+    }
+    
+    .images-container {
+        padding: $border-thickness;
+        
+        & > img {
+            width: 100%;
+            margin-top: calc(140px - #{$border-thickness});
+            margin-bottom: 140px;
+        }
+        .row > img {
+            width: 50%;
+            flex: 1;
+            height: 100%;
+            object-fit: scale-down;
+        }
+    }
+}
+
+.menu-toggle-container {
+    @media #{$tablet} {
+        background: none !important;
+    }
+}

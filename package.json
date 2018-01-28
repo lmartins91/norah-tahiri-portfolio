@@ -1,0 +1,30 @@
+{
+    "name": "norah-tahiri-portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "aws-sdk": "^2.149.0",
+        "classnames": "^2.2.5",
+        "lodash": "^4.17.4",
+        "node-sass-chokidar": "0.0.3",
+        "numeral": "^2.0.6",
+        "react": "^16.1.1",
+        "react-dom": "^16.1.1",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "0.9.x",
+        "react-visibility-sensor": "^3.11.0",
+        "redux-thunk": "^2.2.0",
+        "reselect": "^3.0.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "build-css": "node-sass-chokidar src/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "predeploy": "react-scripts build",
+        "deploy": "aws s3 cp build s3://norahtahiriportfolio-hosting-mobilehub-1906976181 --recursive",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}

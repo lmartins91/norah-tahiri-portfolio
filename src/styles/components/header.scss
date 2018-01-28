@@ -1,0 +1,15 @@
+@import "../__variables.scss";
+
+.header-component {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $border-thickness;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .separator { margin: 0 4px; }
+}

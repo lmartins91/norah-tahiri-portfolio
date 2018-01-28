@@ -1,0 +1,17 @@
+body {
+    overflow-x: hidden;
+}
+
+@import './global.css';
+
+@import './components/about.css';
+@import './components/button.css';
+@import './components/carousel.css';
+@import './components/design.project.css';
+@import './components/detail.css';
+@import './components/footer.css';
+@import './components/header.css';
+@import './components/home.css';
+@import './components/menu.css';
+@import './components/photography.project.css';
+@import './components/projects.css';

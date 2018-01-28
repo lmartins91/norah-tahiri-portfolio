@@ -1,0 +1,77 @@
+[
+    {
+        "categories": ["category 1", "category 2"],
+        "date": "May 2016",
+        "description": "project one description",
+        "id": 1,
+        "media": [
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-1.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-2.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-3.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-4.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-5.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-6.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-7.jpg" }
+        ],
+        "roles": ["role 1", "role 2"],
+        "title": "project one title",
+        "type": "design"
+    },
+    {
+        "categories": ["category 1", "category 2"],
+        "date": "May 2016",
+        "description": "project two description",
+        "id": 2,
+        "media": [
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-2.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-1.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-3.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-4.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-5.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-6.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-7.jpg" },
+            { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-2/BR-8.jpg" }
+        ],
+        "roles": ["role 1", "role 2"],
+        "title": "project two title",
+        "type": "design"
+    },
+    {
+        "categories": ["category 1", "category 2"],
+        "date": "May 2016",
+        "description": "project three description",
+        "id": 3,
+        "media": [
+            { "description": "Shaman whatever fam, hot chicken chia irony portland. Stumptown shoreditch artisan raw denim cred, meggings photo booth snackwave roof party. Blog actually venmo mumblecore hella raclette beard tumblr.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-1.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-2.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-3.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-4.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-5.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-6.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-7.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-8.jpg" }
+        ],
+        "roles": ["role 1", "role 2"],
+        "title": "project three title",
+        "type": "photography"
+    },
+    {
+        "categories": ["category 1", "category 2"],
+        "date": "May 2016",
+        "description": "project four description",
+        "id": 4,
+        "media": [
+            { "description": "Shaman whatever fam, hot chicken chia irony portland. Stumptown shoreditch artisan raw denim cred, meggings photo booth snackwave roof party. Blog actually venmo mumblecore hella raclette beard tumblr.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-1.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-2.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-3.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-4.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-5.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-6.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-7.jpg" },
+            { "description": "Habibi’s Hutch, located in Austin, TX is an untraditional preschool that runs on the belief that children learn through art and experience.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-8.jpg" }
+        ],
+        "roles": ["role 1", "role 2"],
+        "title": "project four title",
+        "type": "photography"
+    }
+]

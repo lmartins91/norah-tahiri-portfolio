@@ -1,0 +1,39 @@
+@import "../__variables.scss";
+
+.projects-component-container {
+    box-sizing: border-box;
+    padding: $border-thickness;
+    height: 100vh;
+    
+    @media #{$mobile} {
+        padding: $border-thickness 0 0 0;
+    }
+    
+    @media #{$tablet} {
+        padding-bottom: 0;
+        .carousel-component-container {
+            height: calc(100% - #{$border-thickness});
+        }
+        
+        .tablet-btn-container {
+            height: $border-thickness;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .button-component-container {
+                margin: 0;
+            }
+        }
+    }
+    
+    h3.title {
+        font-weight: 500;
+        margin-bottom: 8px;
+        @media #{$mobile}, #{$tablet} {
+            margin: 0;
+        }
+    }
+    
+    span { font-size: 14px; }
+    button { margin-top: 64px; }
+}

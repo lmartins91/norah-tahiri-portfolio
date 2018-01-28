@@ -1,0 +1,49 @@
+@import "../__variables.scss";
+
+.home-container {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: $border-thickness;
+
+    @media #{$mobile} {
+        padding: $border-thickness 0;
+    }
+    
+    .projects-container {
+        display: flex;
+        height: 100%;
+        
+        @media #{$mobile}, #{$tablet} {
+            flex-direction: column;
+            & > * { flex: 1; }
+        }
+        
+        .project-detail-container {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            
+            @media #{$desktop} {
+                &:first-of-type { margin-right: 15px; }
+                &:last-of-type { margin-left: 15px; }
+            }
+            
+            .hover-container {
+                &:hover {
+                    opacity: 1;
+                    background: rgba(0, 41, 120, 0.7);
+                }
+                transition: background 0.5s, opacity 0.5s;
+                opacity: 0;
+                background: rgba(0, 41, 120, 0);
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h3 { color: white; }
+            }
+        }
+    }
+}

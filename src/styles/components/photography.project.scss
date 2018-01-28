@@ -1,0 +1,62 @@
+@import "../__variables.scss";
+
+.photography-project-component-container {
+    box-sizing: border-box;
+    padding: $border-thickness;
+    height: 100vh;
+    display: flex;
+    
+    @media #{$mobile} {
+        padding: 0;
+    }
+    
+    h3 {
+        margin: 0;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.7em;
+    }
+    
+    .photo-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        @media #{$mobile} {
+            justify-content: flex-start;
+        }
+        
+        .count {
+            @media #{$mobile}, #{$tablet}, #{$desktop} {
+                position: absolute;
+                bottom: 100px;
+            }
+            
+            @media #{$mobile} {
+                margin: 5% 0;
+            }
+            
+            span {
+                letter-spacing: 1px;
+                &:not(:last-of-type) {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    
+    .project-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: calc(100% - #{$border-thickness});
+        left: 0;
+        right: 0;
+        height: $border-thickness;
+    }
+}
