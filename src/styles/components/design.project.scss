@@ -39,23 +39,27 @@
         p { margin: 65px 0; }
     }
     
-    .carousel-component-container {
-        height: 580px;
-    }
-    
-    .images-container {
-        padding: $border-thickness;
+    .project-images {
+        z-index: 1;
         
-        & > img {
-            width: 100%;
-            margin-top: calc(140px - #{$border-thickness});
-            margin-bottom: 140px;
+        .carousel-container {
+            height: 580px;
         }
-        .row > img {
-            width: 50%;
-            flex: 1;
-            height: 100%;
-            object-fit: scale-down;
+        
+        .images-container {
+            padding: $border-thickness;
+            
+            & > img {
+                width: 100%;
+                margin-top: calc(140px - #{$border-thickness});
+                margin-bottom: 140px;
+            }
+            .row > img {
+                width: 50%;
+                flex: 1;
+                height: 100%;
+                object-fit: scale-down;
+            }
         }
     }
 }

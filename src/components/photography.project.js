@@ -24,11 +24,12 @@ export class PhotographyProject extends Component {
         const { currentIndex, showDetail } = this.state
         return <div className="photography-project-component-container">
             <Header title={project.title} />
-            <Carousel
-                images={project.media}
-                onCurrentIndexChange={(currentIndex) => this.setState({ currentIndex })}
-                onImageClick={(index) => this.setState({ currentIndex: index })}
-            />
+            <div className="carousel-container">
+                <Carousel
+                    images={project.media}
+                    onChange={(index) => this.setState({ currentIndex: index })}
+                />
+            </div>
             <Detail
                 onToggle={(isOpen) => this.setState({ showTitle: !isOpen })}
                 showToggle={true}

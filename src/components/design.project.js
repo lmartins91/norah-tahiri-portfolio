@@ -27,10 +27,11 @@ export const DesignProject = ({ project }) => (
         
         {/* Desktop */}
         <div className="hidden-mobile hidden-tablet">
-            <Carousel
-                images={project.media.slice(0, project.media.length - 3)}
-                scrollOnVertScroll={false}
-            />
+            <div className="carousel-container">
+                <Carousel
+                    images={media.slice(1, media.length - 3)}
+                />
+            </div>
             <div className="images-container">
                 <img alt="" src={project.media[project.media.length - 3].url}></img>
                 <div className="row flex-row">
@@ -43,8 +44,7 @@ export const DesignProject = ({ project }) => (
         {/* Tablet & Mobile */}
         <div className="hidden-desktop">
             <Carousel
-                images={project.media.slice(0, project.media.length - 2)}
-                scrollOnVertScroll={false}
+                images={media.slice(1, media.length - 2)}
             />
             <div className="images-container">
                 <img alt="" src={project.media[project.media.length - 2].url}></img>

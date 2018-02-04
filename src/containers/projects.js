@@ -40,8 +40,7 @@ class Projects extends Component {
             <Header title={this.state.projectType} />
             <Carousel
                 images={images}
-                onCurrentIndexChange={(currentIndex) => this.setState({ currentIndex })}
-                onImageClick={(index) => this.goToProject(projects[index].id)}
+                onChange={(index) => this.setState({ currentIndex: index })}
             />
             <Detail orientation="horizontal">
                 <div className="flex-col justify-content-center align-items-center">
