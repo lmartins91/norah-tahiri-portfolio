@@ -32,7 +32,8 @@
         background: $white;
         
         i {
-            margin: calc(#{$border-thickness} / 2) 0;
+            margin: calc((#{$border-thickness} - 18px) / 2) 0;
+            height: 18px;
         }
         
         
