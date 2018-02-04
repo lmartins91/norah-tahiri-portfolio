@@ -13,20 +13,18 @@ export const DesignProject = ({ project }) => {
             <div>
                 <h3 className="semi-bold">{title}</h3>
                 <span>{categories.join(' • ')}</span>
-                <p className="hidden-tablet">{description}</p>
+                <p className="hidden-mobile hidden-tablet">{description}</p>
             </div>
-            <div>
+            <div className="roles">
                 <h3 className="semi-bold">Role</h3>
                 {roles.map(role => <div key={role}>{role}</div>)}
             </div>
-            <div>
+            <div className="date">
                 <h3 className="semi-bold">Project Date</h3>
                 <div>{date}</div>
             </div>
-            <p className="hidden-desktop">{description}</p>
+            <p className="description hidden-desktop">{description}</p>
         </div>
-        
-        {/* Desktop */}
         <div className="hidden-mobile hidden-tablet project-images">
             <div className="carousel-container">
                 <Carousel
@@ -41,12 +39,12 @@ export const DesignProject = ({ project }) => {
                 </div>
             </div>
         </div>
-        
-        {/* Tablet & Mobile */}
         <div className="hidden-desktop project-images">
-            <Carousel
-                images={media.slice(1, media.length - 2)}
-            />
+            <div className="carousel-container">
+                <Carousel
+                    images={media.slice(1, media.length - 2)}
+                />
+            </div>
             <div className="images-container">
                 <img alt="" src={media[media.length - 2].url}></img>
                 <img alt="" src={media[media.length - 1].url}></img>

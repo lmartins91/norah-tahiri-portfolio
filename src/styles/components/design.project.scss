@@ -1,6 +1,13 @@
 @import "../__variables.scss";
 
 .design-project-component-container {
+    
+    @media #{$mobile} {
+        width: 100%;
+        overflow-x: hidden;
+        padding: $border-thickness 0;
+    }
+    
     .banner-container {
         box-sizing: border-box;
         padding: $border-thickness;
@@ -8,6 +15,11 @@
         
         @media #{$tablet} {
             height: 50%;
+            padding: 0;
+        }
+        
+        @media #{$mobile} {
+            height: calc(100vh - #{$border-thickness});
             padding: 0;
         }
         
@@ -22,12 +34,24 @@
         display: flex;
         padding: 0 calc(2 * #{$border-thickness});
         
-        
         @media #{$tablet} {
             flex-wrap: wrap;
             white-space: nowrap;
             padding: $border-thickness;
             & > p { margin: 0 !important; }
+        }
+        
+        @media #{$mobile} {
+            flex-direction: column;
+            padding: 0 40px;
+            
+            & > * { margin-bottom: 20px; }
+            
+            .date { order: 1; }
+            .role { order: 2; }
+            .description { order: 3; }
+            
+            p.description { margin: 20px 0 40px 0; }
         }
     
         & > * {
@@ -44,16 +68,20 @@
         
         .carousel-container {
             height: 580px;
+            @media #{$mobile} { height: 50vh; }
         }
         
         .images-container {
             padding: $border-thickness;
+            @media #{$mobile} { padding: 0; }
             
             & > img {
                 width: 100%;
                 margin-top: calc(140px - #{$border-thickness});
                 margin-bottom: 140px;
+                @media #{$mobile} { margin: 40px 0 0 0; }
             }
+            
             .row > img {
                 width: 50%;
                 flex: 1;

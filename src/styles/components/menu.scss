@@ -43,6 +43,10 @@
             align-items: center;
         }
         
+        @media #{$mobile} {
+            position: absolute;
+        }
+        
         @media #{$tablet} {
             background: $white;
             height: 100%;
