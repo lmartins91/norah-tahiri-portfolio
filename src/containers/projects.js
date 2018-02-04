@@ -36,20 +36,27 @@ class Projects extends Component {
         
         const goToProjectBtn = <Button text="View" onClick={() => this.goToProject(projects[currentIndex].id)} />
         
+        const content = [
+            <h3 key="1" className="title">{projects[currentIndex].title}</h3>,
+            <span key="2">{projects[currentIndex].categories.join(' • ').split()}</span>
+        ]
+        
         return <div className="projects-component-container">
             <Header title={this.state.projectType} />
             <Carousel
                 images={images}
-                onCurrentIndexChange={(currentIndex) => this.setState({ currentIndex })}
-                onImageClick={(index) => this.goToProject(projects[index].id)}
+                onChange={(index) => this.setState({ currentIndex: index })}
             />
             <Detail orientation="horizontal">
-                <div className="flex-col justify-content-center align-items-center">
-                    <h3 className="title">{projects[currentIndex].title}</h3>
-                    <span>{projects[currentIndex].categories.join(' • ').split()}</span>
-                    <div className="hidden-mobile hidden-tablet">
-                        {goToProjectBtn}
-                    </div>
+                {/* Mobile & Tablet */}
+                <div className="hidden-desktop flex-col justify-content-center align-items-center"
+                    onClick={() => this.goToProject(projects[currentIndex].id)}>
+                    {content}
+                </div>
+                {/* Desktop */}
+                <div className="hidden-mobile hidden-tablet flex-col justify-content-center align-items-center">
+                    {content}
+                    {goToProjectBtn}
                 </div>
             </Detail>
             <div className="tablet-btn-container hidden-mobile hidden-desktop">

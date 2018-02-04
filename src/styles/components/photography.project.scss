@@ -5,18 +5,20 @@
     padding: $border-thickness;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     
-    @media #{$mobile} {
-        padding: 0;
-    }
-    
-    h3 {
-        margin: 0;
-    }
+    @media #{$mobile} { padding: 0; }
+
+    h3 { margin: 0; }
     
     p {
         font-size: 14px;
         line-height: 1.7em;
+    }
+    
+    .carousel-container {
+        flex: 1;
+        @media #{$mobile} { margin: $border-thickness 0; }
     }
     
     .photo-detail {

@@ -6,7 +6,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     pointer-events: none;
     
     h3, h3, span, p, div { color: $white; }
@@ -30,12 +30,13 @@
         justify-content: center;
         pointer-events: auto;
         background: $white;
+        transition: background 1s;
+        &.hidden { background: none; }
         
         i {
             margin: calc((#{$border-thickness} - 18px) / 2) 0;
             height: 18px;
         }
-        
         
         @media #{$mobile}, #{$tablet} {
             height: $border-thickness;
@@ -48,7 +49,6 @@
             flex-direction: column;
             justify-content: flex-start;
             pointer-events: none;
-            
             transition: opacity 0s 1s;
             opacity: 1;
             &.hidden { opacity: 0; }
