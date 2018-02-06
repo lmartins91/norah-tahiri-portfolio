@@ -29,6 +29,7 @@ export const DesignProject = ({ project }) => {
             <div className="carousel-container">
                 <Carousel
                     images={media.slice(1, media.length - 3)}
+                    scrollOnVertScroll={false}
                 />
             </div>
             <div className="images-container">

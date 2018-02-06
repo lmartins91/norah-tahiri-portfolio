@@ -45,7 +45,8 @@ class Projects extends Component {
             <Header title={this.state.projectType} />
             <Carousel
                 images={images}
-                onChange={(index) => this.setState({ currentIndex: index })}
+                onChange={(i) => this.setState({ currentIndex: i })}
+                onImageClick={(i) => this.goToProject(projects[currentIndex].id)}
             />
             <Detail orientation="horizontal">
                 {/* Mobile & Tablet */}
