@@ -44,6 +44,38 @@
     .slider, .slider-frame, .slider-list, .slider-slide {
         height: 100% !important;
     }
+    
+    .slider {
+        &-decorator-0, &-decorator-1 {
+            & > button {
+                visibility: hidden;
+                opacity: 1 !important;
+            }
+            
+            &::after {
+                visibility: visible !important;
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+            }
+        }
+        
+        &-decorator-0:after { /* Previous */
+            left: 0;
+            background-image: url('../../../assets/icons/arrow1_left.png');
+        }
+        
+        &-decorator-1:after { /* Next */
+            left: calc(100% - 40px);
+            background-image: url('../../../assets/icons/arrow2_right.png');
+        }
+    }
 
     .image-container {
         height: 100%;
@@ -55,6 +87,4 @@
             width: 100%;
         }
     }
-    
-    button { display: none; }
 }
