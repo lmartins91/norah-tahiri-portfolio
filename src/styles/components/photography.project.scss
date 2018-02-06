@@ -19,6 +19,10 @@
     .carousel-container {
         flex: 1;
         @media #{$mobile} { margin: $border-thickness 0; }
+        
+        @media #{$mobile}, #{$tablet} {
+            img { object-fit: contain; }
+        }
     }
     
     .photo-detail {
