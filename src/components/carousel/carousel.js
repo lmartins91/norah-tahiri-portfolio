@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 import { ScrollCarousel, SnapCarousel } from '../'
 
 export const Carousel = ({ images, onChange, onImageClick, scrollOnVertScroll = true }) => [
-    <div className="carousel-container hidden-desktop" key="scroll">
+    <div className="carousel-component-container hidden-desktop" key="scroll">
         <SnapCarousel images={images} onChange={onChange} />
     </div>,
-    <div className="carousel-container hidden-mobile hidden-tablet" key="snap">
+    <div className="carousel-component-container hidden-mobile hidden-tablet" key="snap">
         <ScrollCarousel images={images} onChange={onChange} onImageClick={onImageClick} scrollOnVertScroll={scrollOnVertScroll} />
     </div>
 ]
