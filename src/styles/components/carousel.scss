@@ -45,9 +45,8 @@
         height: 100% !important;
     }
     
-    button {
-        color: white !important;
-        font-size: 30px !important;
+    .slider-decorator-0, .slider-decorator-1 {
+        display: none;
     }
 
     .image-container {
