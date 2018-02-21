@@ -1,7 +1,11 @@
-import projects from '../../assets/projects.json'
+import * as _ from 'lodash'
+import renderHTML from 'react-render-html'
+
+import projectsJSON from '../../assets/projects.json'
+
+const projects = projectsJSON.map(p => ({ ...p, description: renderHTML(_.unescape(p.description)) }))
 
 export class ProjectsService {
-    // Temp. Will eventually connect to S3 buckets
     
     static getProjects() {
         return Promise.resolve(projects)
