@@ -9,6 +9,10 @@
     pointer-events: none;
     overflow: hidden;
     
+    @media #{$tablet} {
+        height: 100vh;
+    }
+    
     & > * { pointer-events: all; }
     
     &.horizontal > .content-container {
