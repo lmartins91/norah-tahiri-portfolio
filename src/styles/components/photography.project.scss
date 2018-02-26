@@ -18,7 +18,12 @@
     
     .carousel-container {
         flex: 1;
+        
         @media #{$mobile} { margin: $border-thickness 0; }
+        
+        @media #{$desktop} {
+            height: 100%;
+        }
         
         @media #{$mobile}, #{$tablet} {
             img { object-fit: contain; }
