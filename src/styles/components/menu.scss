@@ -174,8 +174,8 @@
         .credit-container {
             @media #{$mobile} { order: 3; }
             @media #{$tablet} { order: 4; }
+            @media #{$tablet}, #{$desktop} { font-size: 13px; }
             
-            div { font-size: 13px; }
             .social-links-container { margin-bottom: 10px; }
             a, a:visited { color: white; }
         }
