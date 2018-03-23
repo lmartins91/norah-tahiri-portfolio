@@ -7,17 +7,23 @@ import classNames from 'classnames/bind'
 import { toggleMenu } from '../actions'
 import { Header } from '../components'
 
-const RoundLink = ({ children, link }) => (
+const RoundLink = ({ children, url }) => (
     <button className="round-link-container">
-        <a href={link} className="flex-row justify-content-center align-items-center">{children}</a>
+        <a href={url} className="flex-row justify-content-center align-items-center">{children}</a>
     </button>
 )
 
 const SocialLinks = () => (
     <div className="social-links-container">
-        <RoundLink><i className="fa fa-facebook" aria-hidden="true"></i></RoundLink>
-        <RoundLink><i className="fa fa-instagram" aria-hidden="true"></i></RoundLink>
-        <RoundLink><i className="fa fa-behance" aria-hidden="true"></i></RoundLink>
+        <RoundLink url="https://www.facebook.com/norah.tahiri">
+            <i className="fa fa-facebook" aria-hidden="true"></i>
+        </RoundLink>
+        <RoundLink url="https://www.instagram.com/ntahiri/">
+            <i className="fa fa-instagram" aria-hidden="true"></i>
+        </RoundLink>
+        <RoundLink url="https://www.behance.net/norahtahiri">
+            <i className="fa fa-behance" aria-hidden="true"></i>
+        </RoundLink>
     </div>
 )
 
