@@ -7,7 +7,7 @@ export const Header = ({ title }) => {
             <h3>Norah Tahiri</h3>
         </Link>
         {title && (
-            <div className="flex-row align-items-center hidden-mobile">
+            <div className="flex-row align-items-center hidden-mobile hidden-tablet">
                 <span className="separator">•</span>
                 <h3 className="medium">{title}</h3>
             </div>

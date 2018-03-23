@@ -36,6 +36,8 @@ p, div, span {
     @media #{$mobile} { font-size: 14px; }
 }
 
+a { text-decoration: none }
+
 i.fa {
     color: $dark-grey;
     font-size: 18px;
