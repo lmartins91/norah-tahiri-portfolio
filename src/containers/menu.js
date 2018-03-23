@@ -74,9 +74,9 @@ export class Menu extends Component {
                     </div>
                     <div>
                         <div className="hidden-mobile hidden-tablet">© Norah Tahiri 2017. All Rights Reserved.</div>
-                        <div className="hidden-desktop">© Norah Tahiri 2017.</div>
+                        <div className="hidden-desktop">© Norah Tahiri 2018.</div>
                         <div className="hidden-desktop">All Rights Reserved.</div>
-                        <div>Developed by Luis Martins</div>
+                        <div>Developed by <a href="https://github.com/lmartins91">Luis Martins</a></div>
                     </div>
                 </div>
             </div>
