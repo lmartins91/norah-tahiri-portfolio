@@ -13,7 +13,7 @@ export const DesignProject = ({ project }) => {
             <div>
                 <h3 className="semi-bold">{title}</h3>
                 <span>{categories.join(' • ')}</span>
-                <p className="hidden-mobile hidden-tablet">{description}</p>
+                <div className="hidden-mobile hidden-tablet description">{description}</div>
             </div>
             <div className="roles">
                 <h3 className="semi-bold">Role</h3>
@@ -23,7 +23,7 @@ export const DesignProject = ({ project }) => {
                 <h3 className="semi-bold">Project Date</h3>
                 <div>{date}</div>
             </div>
-            <p className="description hidden-desktop">{description}</p>
+            <div className="description hidden-desktop description">{description}</div>
         </div>
         <div className="hidden-mobile hidden-tablet project-images">
             <div className="carousel-container">

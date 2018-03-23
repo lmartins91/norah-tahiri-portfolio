@@ -38,7 +38,7 @@
             flex-wrap: wrap;
             white-space: nowrap;
             padding: $border-thickness;
-            & > p { margin: 0 !important; }
+            & > div.description { margin: 0 !important; }
         }
         
         @media #{$mobile} {
@@ -51,7 +51,10 @@
             .role { order: 2; }
             .description { order: 3; }
             
-            p.description { margin: 20px 0 40px 0; }
+            div.description {
+                margin: 20px 0 40px 0;
+                p { text-align: justify; }
+            }
         }
     
         & > * {
@@ -60,7 +63,13 @@
         }
         
         h3 { margin-bottom: 0px; }
-        p { margin: 65px 0; }
+        div.description {
+            margin: 65px 0;
+            min-width: 100%;
+            p { white-space: normal; }
+        }
+        
+        a { font-size: 16px; }
     }
     
     .project-images {

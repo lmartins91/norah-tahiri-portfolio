@@ -2,7 +2,7 @@
     {
         "categories": ["category 1", "category 2"],
         "date": "May 2016",
-        "description": "&lt;div&gt;Lorem ipsum dolor amet offal asymmetrical &lt;a href=&quot;google.com&quot;&gt;kombucha&lt;/a&gt; trust fund four dollar toast, taxidermy synth snackwave portland plaid hexagon. Brooklyn jean shorts unicorn flannel distillery kickstarter tbh. Enamel pin quinoa heirloom hoodie chia, organic literally keytar hella. Tumeric cliche bespoke migas. Sriracha vice sartorial organic gentrify humblebrag brooklyn cold-pressed. Vinyl pabst retro heirloom 90&#39;s hashtag try-hard sriracha fixie raclette intelligentsia forage. Cliche thundercats pickled asymmetrical shabby chic, swag tbh tacos photo booth.&lt;br&gt;&lt;/br&gt;Swag.&lt;/div&gt;",
+        "description": "&lt;p&gt;Lorem ipsum dolor amet offal asymmetrical &lt;a href=&quot;google.com&quot;&gt;kombucha&lt;/a&gt; trust fund four dollar toast, taxidermy synth snackwave portland plaid hexagon. Brooklyn jean shorts unicorn flannel distillery kickstarter tbh. Enamel pin quinoa heirloom hoodie chia, organic literally keytar hella. Tumeric cliche bespoke migas. Sriracha vice sartorial organic gentrify humblebrag brooklyn cold-pressed. Vinyl pabst retro heirloom 90&#39;s hashtag try-hard sriracha fixie raclette intelligentsia forage. Cliche thundercats pickled asymmetrical shabby chic, swag tbh tacos photo booth.&lt;br&gt;&lt;/br&gt;Swag.&lt;/p&gt;",
         "id": 1,
         "media": [
             { "description": "image one description", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/design-1/HR-1.jpg" },
@@ -39,7 +39,6 @@
     {
         "categories": ["category 1", "category 2"],
         "date": "May 2016",
-        "description": "project three description",
         "id": 3,
         "media": [
             { "description": "Shaman whatever fam, hot chicken chia irony portland. Stumptown shoreditch artisan raw denim cred, meggings photo booth snackwave roof party. Blog actually venmo mumblecore hella raclette beard tumblr.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-1/Portrait-1.jpg" },
@@ -58,7 +57,6 @@
     {
         "categories": ["category 1", "category 2"],
         "date": "May 2016",
-        "description": "project four description",
         "id": 4,
         "media": [
             { "description": "Shaman whatever fam, hot chicken chia irony portland. Stumptown shoreditch artisan raw denim cred, meggings photo booth snackwave roof party. Blog actually venmo mumblecore hella raclette beard tumblr.", "url": "https://s3.us-east-2.amazonaws.com/norah-tahiri-images/photo-3/HH-1.jpg" },
