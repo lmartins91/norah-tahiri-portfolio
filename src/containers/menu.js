@@ -9,7 +9,7 @@ import { Header } from '../components'
 
 const RoundLink = ({ children, url }) => (
     <button className="round-link-container">
-        <a href={url} className="flex-row justify-content-center align-items-center">{children}</a>
+        <a href={url} target="_blank" className="flex-row justify-content-center align-items-center">{children}</a>
     </button>
 )
 
@@ -82,7 +82,7 @@ export class Menu extends Component {
                         <div className="hidden-mobile hidden-tablet">© Norah Tahiri 2017. All Rights Reserved.</div>
                         <div className="hidden-desktop">© Norah Tahiri 2018.</div>
                         <div className="hidden-desktop">All Rights Reserved.</div>
-                        <div>Developed by <a href="https://github.com/lmartins91">Luis Martins</a></div>
+                        <div>Developed by <a href="https://github.com/lmartins91" target="_blank">Luis Martins</a></div>
                     </div>
                 </div>
             </div>
